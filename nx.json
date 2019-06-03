@@ -7,5 +7,30 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "rank-active": {
+      "tags": ["scope:rank-active"],
+      "implicitDependencies": []
+    },
+    "rank-active-e2e": {
+      "tags": ["scope:rank-active-e2e"],
+      "implicitDependencies": []
+    },
+    "data-for-seo": {
+      "tags": ["scope:data-for-seo"],
+      "implicitDependencies": []
+    },
+    "data-for-seo-e2e": {
+      "tags": ["scope:data-for-seo-e2e"],
+      "implicitDependencies": []
+    },
+    "admin-panel": {
+      "tags": ["scope:admin-panel"],
+      "implicitDependencies": []
+    },
+    "admin-panel-e2e": {
+      "tags": ["scope:admin-panel-e2e"],
+      "implicitDependencies": []
+    }
+  }
 }
