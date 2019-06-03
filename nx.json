@@ -10,27 +10,34 @@
   "projects": {
     "rank-active": {
       "tags": ["scope:rank-active"],
-      "implicitDependencies": []
+      "implicitDependencies": ["auth-signup"]
     },
     "rank-active-e2e": {
-      "tags": ["scope:rank-active-e2e"],
-      "implicitDependencies": []
+      "tags": ["scope:rank-active-e2e"]
     },
     "data-for-seo": {
       "tags": ["scope:data-for-seo"],
       "implicitDependencies": []
     },
     "data-for-seo-e2e": {
-      "tags": ["scope:data-for-seo-e2e"],
-      "implicitDependencies": []
+      "tags": ["scope:data-for-seo-e2e"]
     },
     "admin-panel": {
       "tags": ["scope:admin-panel"],
       "implicitDependencies": []
     },
     "admin-panel-e2e": {
-      "tags": ["scope:admin-panel-e2e"],
-      "implicitDependencies": []
+      "tags": ["scope:admin-panel-e2e"]
+    },
+    "auth-signup": {
+      "tags": ["scope:auth-signup"],
+      "implicitDependencies": ["auth-header", "auth-footer"]
+    },
+    "auth-header": {
+      "tags": ["scope:auth-header"]
+    },
+    "auth-footer": {
+      "tags": ["scope:auth-footer"]
     }
   }
 }

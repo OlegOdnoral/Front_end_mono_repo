@@ -347,6 +347,99 @@
           }
         }
       }
+    },
+    "auth-signup": {
+      "projectType": "library",
+      "root": "libs/auth/signup",
+      "sourceRoot": "libs/auth/signup/src",
+      "prefix": "rank-active",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/auth/signup/tsconfig.lib.json",
+              "libs/auth/signup/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/auth/signup/jest.config.js",
+            "tsConfig": "libs/auth/signup/tsconfig.spec.json",
+            "setupFile": "libs/auth/signup/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "auth-header": {
+      "projectType": "library",
+      "root": "libs/auth/header",
+      "sourceRoot": "libs/auth/header/src",
+      "prefix": "rank-active",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/auth/header/tsconfig.lib.json",
+              "libs/auth/header/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/auth/header/jest.config.js",
+            "tsConfig": "libs/auth/header/tsconfig.spec.json",
+            "setupFile": "libs/auth/header/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "auth-footer": {
+      "projectType": "library",
+      "root": "libs/auth/footer",
+      "sourceRoot": "libs/auth/footer/src",
+      "prefix": "rank-active",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/auth/footer/tsconfig.lib.json",
+              "libs/auth/footer/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/auth/footer/jest.config.js",
+            "tsConfig": "libs/auth/footer/tsconfig.spec.json",
+            "setupFile": "libs/auth/footer/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

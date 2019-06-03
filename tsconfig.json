@@ -16,9 +16,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "jszip": [
-        "../node_modules/jszip/dist/jszip.js"
-      ]
+      "jszip": ["../node_modules/jszip/dist/jszip.js"],
+      "@rank-active/auth/signup": ["libs/auth/signup/src/index.ts"],
+      "@rank-active/auth/header": ["libs/auth/header/src/index.ts"],
+      "@rank-active/auth/footer": ["libs/auth/footer/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

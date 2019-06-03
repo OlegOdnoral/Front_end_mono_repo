@@ -61,6 +61,7 @@
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
+    "jest-preset-angular": "7.0.0",
     "@angular-devkit/build-angular": "^0.800.1",
     "@angular/cli": "^8.0.0",
     "@angular/compiler-cli": "^8.0.0",
@@ -86,7 +87,6 @@
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "jest": "24.1.0",
-    "jest-preset-angular": "7.0.0",
     "jszlib": "0.0.1",
     "log-symbols": "^3.0.0",
     "ngrx-store-freeze": "^0.2.4",

@@ -82,3 +82,11 @@ Run `npm run dep-graph` to see a diagram of the dependencies of your projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+Some useful commands:
+
+`ng generate lib episode-details --routing --lazy`
+
+`ng generate module signup --project auth`
+
+`ng generate c header --project auth --module header`
