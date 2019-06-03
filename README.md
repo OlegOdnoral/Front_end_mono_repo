@@ -1,3 +1,10 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Tempeny_New_Front&metric=alert_status)](https://sonarcloud.io/dashboard?id=Tempeny_New_Front)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Tempeny_New_Front&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=Tempeny_New_Front)
+
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Tempeny_New_Front&metric=ncloc)](https://sonarcloud.io/dashboard?id=Tempeny_New_Front)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Tempeny_New_Front&metric=bugs)](https://sonarcloud.io/dashboard?id=Tempeny_New_Front)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Tempeny_New_Front&metric=code_smells)](https://sonarcloud.io/dashboard?id=Tempeny_New_Front)
+
 # RankActive
 
 This project was generated using [Nx](https://nx.dev).
