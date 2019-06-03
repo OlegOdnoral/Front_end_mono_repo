@@ -90,3 +90,5 @@ Some useful commands:
 `ng generate module signup --project auth`
 
 `ng generate c header --project auth --module header`
+
+`ng generate lib mymodule --routing --lazy --parentModule=apps/myapp/src/myapp.module.ts`
