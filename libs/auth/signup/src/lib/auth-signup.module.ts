@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthHeaderModule } from '@rank-active/auth/header';
-import { AuthFooterModule } from '@rank-active/auth/footer';
+import { AuthSharedHeaderModule } from '@rank-active/auth/shared/header';
+import { AuthSharedFooterModule } from '@rank-active/auth/shared/footer';
 import { AuthSignupComponent } from './auth-signup/auth-signup.component';
 import { AuthSignupRoutingModule } from './router/auth-signup.routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    AuthHeaderModule,
-    AuthFooterModule,
+    AuthSharedHeaderModule,
+    AuthSharedFooterModule,
     AuthSignupRoutingModule
   ],
   declarations: [AuthSignupComponent]

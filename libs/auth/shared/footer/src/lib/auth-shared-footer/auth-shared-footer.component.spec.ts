@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AuthFooterComponent } from './auth-footer.component';
+import { AuthSharedFooterComponent } from './auth-shared-footer.component';
 
-describe('AuthFooterComponent', () => {
-  let component: AuthFooterComponent;
-  let fixture: ComponentFixture<AuthFooterComponent>;
+describe('AuthSharedFooterComponent', () => {
+  let component: AuthSharedFooterComponent;
+  let fixture: ComponentFixture<AuthSharedFooterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AuthFooterComponent ]
+      declarations: [ AuthSharedFooterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AuthFooterComponent);
+    fixture = TestBed.createComponent(AuthSharedFooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

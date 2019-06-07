@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'rank-active-auth-header',
-  templateUrl: './auth-header.component.html',
-  styleUrls: ['./auth-header.component.scss']
+  selector: 'rank-active-auth-shared-header',
+  templateUrl: './auth-shared-header.component.html',
+  styleUrls: ['./auth-shared-header.component.scss']
 })
-export class AuthHeaderComponent implements OnInit {
+export class AuthSharedHeaderComponent implements OnInit {
 
   urlToMain: string;
   wlDomainDescription: string;

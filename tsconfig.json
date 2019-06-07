@@ -18,8 +18,15 @@
     "paths": {
       "jszip": ["../node_modules/jszip/dist/jszip.js"],
       "@rank-active/auth/signup": ["libs/auth/signup/src/index.ts"],
-      "@rank-active/auth/header": ["libs/auth/header/src/index.ts"],
-      "@rank-active/auth/footer": ["libs/auth/footer/src/index.ts"]
+      "@rank-active/auth/shared/header": [
+        "libs/auth/shared/header/src/index.ts"
+      ],
+      "@rank-active/auth/shared/footer": [
+        "libs/auth/shared/footer/src/index.ts"
+      ],
+      "@rank-active/auth/shared/social-buttons": [
+        "libs/auth/shared/social-buttons/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

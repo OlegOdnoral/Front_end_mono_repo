@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AuthHeaderComponent } from './auth-header.component';
+import { AuthSharedHeaderComponent } from './auth-shared-header.component';
 
-describe('AuthHeaderComponent', () => {
-  let component: AuthHeaderComponent;
-  let fixture: ComponentFixture<AuthHeaderComponent>;
+describe('AuthSharedHeaderComponent', () => {
+  let component: AuthSharedHeaderComponent;
+  let fixture: ComponentFixture<AuthSharedHeaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AuthHeaderComponent ]
+      declarations: [ AuthSharedHeaderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AuthHeaderComponent);
+    fixture = TestBed.createComponent(AuthSharedHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

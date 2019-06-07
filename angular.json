@@ -379,18 +379,18 @@
         }
       }
     },
-    "auth-header": {
+    "auth-shared-header": {
       "projectType": "library",
-      "root": "libs/auth/header",
-      "sourceRoot": "libs/auth/header/src",
+      "root": "libs/auth/shared/header",
+      "sourceRoot": "libs/auth/shared/header/src",
       "prefix": "rank-active",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/auth/header/tsconfig.lib.json",
-              "libs/auth/header/tsconfig.spec.json"
+              "libs/auth/shared/header/tsconfig.lib.json",
+              "libs/auth/shared/header/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -398,9 +398,9 @@
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/auth/header/jest.config.js",
-            "tsConfig": "libs/auth/header/tsconfig.spec.json",
-            "setupFile": "libs/auth/header/src/test-setup.ts"
+            "jestConfig": "libs/auth/shared/header/jest.config.js",
+            "tsConfig": "libs/auth/shared/header/tsconfig.spec.json",
+            "setupFile": "libs/auth/shared/header/src/test-setup.ts"
           }
         }
       },
@@ -410,18 +410,18 @@
         }
       }
     },
-    "auth-footer": {
+    "auth-shared-footer": {
       "projectType": "library",
-      "root": "libs/auth/footer",
-      "sourceRoot": "libs/auth/footer/src",
+      "root": "libs/auth/shared/footer",
+      "sourceRoot": "libs/auth/shared/footer/src",
       "prefix": "rank-active",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/auth/footer/tsconfig.lib.json",
-              "libs/auth/footer/tsconfig.spec.json"
+              "libs/auth/shared/footer/tsconfig.lib.json",
+              "libs/auth/shared/footer/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -429,9 +429,40 @@
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/auth/footer/jest.config.js",
-            "tsConfig": "libs/auth/footer/tsconfig.spec.json",
-            "setupFile": "libs/auth/footer/src/test-setup.ts"
+            "jestConfig": "libs/auth/shared/footer/jest.config.js",
+            "tsConfig": "libs/auth/shared/footer/tsconfig.spec.json",
+            "setupFile": "libs/auth/shared/footer/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "auth-shared-social-buttons": {
+      "projectType": "library",
+      "root": "libs/auth/shared/social-buttons",
+      "sourceRoot": "libs/auth/shared/social-buttons/src",
+      "prefix": "rank-active",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/auth/shared/social-buttons/tsconfig.lib.json",
+              "libs/auth/shared/social-buttons/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/auth/shared/social-buttons/jest.config.js",
+            "tsConfig": "libs/auth/shared/social-buttons/tsconfig.spec.json",
+            "setupFile": "libs/auth/shared/social-buttons/src/test-setup.ts"
           }
         }
       },

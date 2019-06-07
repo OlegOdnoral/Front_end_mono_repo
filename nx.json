@@ -31,13 +31,16 @@
     },
     "auth-signup": {
       "tags": ["scope:auth-signup"],
-      "implicitDependencies": ["auth-header", "auth-footer"]
+      "implicitDependencies": ["auth-shared-header", "auth-shared-footer"]
     },
-    "auth-header": {
-      "tags": ["scope:auth-header"]
+    "auth-shared-header": {
+      "tags": ["scope:auth-shared-header"]
     },
-    "auth-footer": {
-      "tags": ["scope:auth-footer"]
+    "auth-shared-footer": {
+      "tags": ["scope:auth-shared-footer"]
+    },
+    "auth-shared-social-buttons": {
+      "tags": ["scope:auth-shared-social-buttons"]
     }
   }
 }
