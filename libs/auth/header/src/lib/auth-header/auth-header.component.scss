@@ -1,0 +1,117 @@
+.login-title {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+}
+
+.login-title:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 50%;
+  z-index: 3;
+}
+
+.container {
+  text-align: center;
+  height: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login-info {
+  padding: 1% 0 3% 0;
+}
+
+.rs-logo {
+  display: block;
+  margin: 20px auto;
+  text-decoration: none !important;
+  float: none;
+  border-bottom: none;
+  /*height: 50px;*/
+  padding: 0 15px;
+}
+
+.rs-logo_text-info {
+  font-size: 20px;
+  text-align: center;
+  color: #5b657c;
+  font-family: 'Segoe UI', Helvetica, Verdana, san-serif;
+  margin: 0 0 10px;
+}
+
+.rs-logo_img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  outline: none;
+  height: 100%;
+  width: initial;
+}
+
+.rs-logo-img-hover {
+  vertical-align: bottom;
+  height: 80%;
+}
+
+a, a:link {
+  border-bottom: 0 solid #1e9ac3;
+}
+.custom-wl-img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  outline: none;
+  height: 70px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rs-logo_text-info {
+    font-size: 17px;
+  }
+
+  .rs-logo {
+    margin: 10px auto;
+    /*width: 300px;*/
+    /*height: 40px;*/
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .custom-wl-img {
+    height: 42px;
+    width: auto;
+  }
+  .login-info {
+    padding: 3% 0;
+  }
+}
+
+
+
+
