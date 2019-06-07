@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'auth-header',
+  name: 'auth-shared-header',
   preset: '../../../jest.config.js',
   coverageDirectory: '../../../coverage/libs/auth/header',
   snapshotSerializers: [

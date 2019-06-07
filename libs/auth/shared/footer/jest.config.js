@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'auth-footer',
+  name: 'auth-shared-footer',
   preset: '../../../jest.config.js',
   coverageDirectory: '../../../coverage/libs/auth/footer',
   snapshotSerializers: [
