@@ -1,5 +1,100 @@
-<rank-active-auth-shared-header></rank-active-auth-shared-header>
-<p>
-  auth-signup works!
-</p>
-<rank-active-auth-shared-footer></rank-active-auth-shared-footer>
+
+<div>
+
+  <div>
+    <div class="signin-container">
+      <rank-active-auth-shared-header></rank-active-auth-shared-header>
+      <div class="login-form">
+        <div class="big-img-container"></div>
+        <div class="container">
+          <div class="form-container col-lg-8 col-md-9 col-sm-8 col-xs-10">
+            <div class="form-title col-lg-12 col-md-12 col-xs-12">
+              <p class="form-sing-in" translate>Create an account</p>
+              <p class="form-sing-up">Already registered? <a [routerLink]="['/signin']">Sign In</a></p>
+            </div>
+            <div class="col-sm-12 col-xs-12" id="signupd-fields" class="col-lg-6 col-md-6">
+              <form>
+                <div class="form-group">
+                  <div class="input-icon"><img src="./app/auth/images/user_icon.png"
+                                               alt="Name" title="Name"></div>
+                  <input type="text" placeholder="Name" autocomplete="off" spellcheck="false"
+                         formControlName="name" class="form-control form-control-sing-in">
+                </div>
+                <div class="form-group">
+                  <div class="input-icon"><img src="./app/auth/images/user_icon.png"
+                                               alt="Phone" title="Phone"></div>
+                  <input required minlength="9" maxlength="14" type="text" placeholder="Phone" autocomplete="off"
+                         spellcheck="false" formControlName="phone" class="form-control form-control-sing-in">
+                  <div>
+                    <div class="alert alert-danger" translate>
+                      <span translate>Phone may contain only numbers.</span>
+                    </div>
+                    <div class="alert alert-danger" translate>
+                      <span translate>Phone is required.</span>
+                    </div>
+                    <div class="alert alert-danger" translate>
+                      <span translate>Phone must be at least 9 characters long.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-icon"><img src="./app/auth/images/user_icon.png"
+                                               alt="Email" title="Email"></div>
+                  <input required type="email" placeholder="Email Address" autocomplete="off"
+                         spellcheck="false" formControlName="email" class="form-control form-control-sing-in">
+                  <div>
+                    <div class="alert alert-danger">
+                      Email is required
+                    </div>
+                    <div class="alert alert-danger">
+                      Email is not valid
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-icon"><img src="./app/auth/images/password_icon.png"
+                                               alt="Password" title="Password"></div>
+                  <input required type="password" placeholder="Password" autocomplete="off" spellcheck="false"
+                         formControlName="password" class="form-control form-control-sing-in">
+
+                  <span class="help-inline" id="strength">
+                                <span class="label">
+                                    <i class="strength-icon icon-white"></i>
+                                </span>
+                            </span>
+
+                  <div
+                       class="alert alert-danger" translate>
+                    Password must be at least 5 characters long.
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input required type="checkbox" name="privacy" id="privacy" formControlName="privacy"
+                         class="privacy-checkbox">
+                  <label for="privacy" class="help-block"><span></span>{{'I agree to the'}} <a
+                    >{{'Terms of Use'}}</a> {{'and'}} <a
+                   >{{'Privacy Policy'}}</a></label>
+                  <div
+                       class="alert alert-danger" translate>
+                    You must agree to the terms
+                  </div>
+                </div>
+                <!--<button class="btn btn-primary btn-sing-in" [disabled]="form.invalid" type="submit">Sign In</button>-->
+                <button class="btn btn-primary btn-sing-in" type="submit" #captchaRef2>Sign Up</button>
+              </form>
+            </div>
+
+            <div class="social-login col-lg-6 col-md-6 col-xs-12">
+              <rank-active-auth-shared-social-buttons></rank-active-auth-shared-social-buttons>
+            </div>
+          </div>
+        </div>
+      </div>
+      <rank-active-auth-shared-footer></rank-active-auth-shared-footer>
+    </div>
+
+  </div>
+
+
+</div>
+

@@ -1,0 +1,427 @@
+@import url(./varibles.scss);
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  float: left;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9,
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.signin-container {
+  background: $background_image;
+  background-size: cover;
+  padding: 0;
+  height: 100%;
+}
+
+.login-form {
+  height: auto;
+  min-height: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.social-login {
+  margin-top: 20px;
+  padding-left: 35px;
+}
+
+p {
+  color: #5b657c;
+  font-family: $font_segoe_ui;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.form-sing-in {
+  color: $white_text_color;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.form-sing-up {
+  color: $white_text_color;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  float: right;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #16c5fe;
+  font-family: $font_segoe_ui;
+}
+
+.form-title:after {
+  border-top: 1px solid #383f48;
+  border-bottom: 1px solid #2a2d33;
+  width: 100%;
+  height: 0;
+  content: "";
+  display: block;
+}
+
+.form-login:after {
+  border-left: 1px solid #383f48;
+  border-right: 1px solid #2a2d33;
+  width: 2px;
+  height: 100%;
+  content: "";
+  display: block;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.forgot-pass {
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.input-icon {
+  padding: 12px 15px;
+  position: absolute;
+}
+
+.input-icon:after {
+  position: absolute;
+  display: block;
+  content: "";
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #43474e;
+  -webkit-transform: scaleY(.56);
+  -moz-transform: scaleY(.56);
+  -o-transform: scaleY(.56);
+  -ms-transform: scaleY(.56);
+  transform: scaleY(.56);
+}
+
+.form-control {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.form-control-sing-in {
+  border-radius: 0;
+  background-color: #545861;
+  border: 1px solid #263344;
+  box-shadow: inset 0 1px 0 #3c3f47;
+  height: 45px;
+  color: $white_text_color;
+  padding: 0 12px 0 55px;
+  font-size: 16px;
+  font-family: $font_segoe_ui;
+  width: 100%;
+}
+
+.form-control-sing-in:focus, .form-control-sing-in:active {
+  -webkit-box-shadow: $form_focus_box_shadow;
+  box-shadow: $form_focus_box_shadow;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-sing-in, .btn-register {
+  outline: none;
+  border-radius: 0;
+  border: 1px solid #4f535b;
+  width: 100%;
+  color: $white_text_color;
+  height: 45px;
+  box-shadow: 0 2px 1px #2d313a;
+  font-size: 18px;
+  font-family: $font_segoe_ui;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: $form_button_color none;
+  -webkit-appearance: button;
+}
+
+.social-login-text {
+  color: $white_text_color;
+  font-size: 16px;
+}
+
+.social-icon-list {
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+
+.social-icon-link {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 36%;
+}
+
+.btn-primary.disabled, .btn-primary, fieldset .btn-primary, .btn-primary.disabled:hover, .btn-primary:hover, fieldset .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary:focus, fieldset .btn-primary:focus, .btn-primary.disabled.focus, .btn-primary.focus, fieldset .btn-primary.focus, .btn-primary.disabled:active, .btn-primary:active, fieldset .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active, fieldset .btn-primary.active {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+button.btn.btn-primary.btn-sing-in:hover {
+  color: $white_text_color;
+}
+
+button.btn.btn-primary.btn-sing-in:disabled {
+  background-color: $form_button_color;
+}
+
+button.btn.btn-primary.btn-sing-in.form-error {
+  background-color: $form_button_color;
+}
+
+.login-form a {
+  border-bottom: none !important;
+}
+
+.login-form a:hover, .bf a:focus, .bf a:active {
+  color: $success_text_color;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.social-icon-list img:hover {
+  -webkit-box-shadow: $form_focus_box_shadow;
+  box-shadow: $form_focus_box_shadow;
+  transition: all 300ms ease-in-out;
+}
+
+.form-container {
+  background: rgba(39, 45, 54, .75);
+  margin: 50px auto;
+  float: none !important;
+  position: relative;
+  padding: 15px 10px;
+  display: table;
+}
+
+.form-login {
+  margin-top: 10px;
+  padding: 0 35px 0 25px;
+}
+
+.form-group .help-block {
+  font-size: 14px;
+  color: $white_text_color;
+  line-height: 18px;
+  margin: 0 !important;
+}
+
+.form-group label {
+  font-weight: 400;
+  display: initial;
+}
+
+@media screen and (max-width: 1200px) {
+  .social-icon-link {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .form-login:after {
+    display: none;
+  }
+
+  .social-login {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-login {
+    padding: 0 15px;
+  }
+
+  .social-login {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .form-sing-up {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  .social-icon {
+    width: 100%;
+  }
+
+  .social-icon-link {
+    width: 40%;
+  }
+
+  .social-login-text, .form-sing-up {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+
+  .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+    float: left;
+  }
+}
+
+@media (max-height: 790px) {
+  .signin-container {
+    overflow-y: scroll;
+  }
+}
+
+.signin-error-container {
+  display: block !important;
+  padding: 0 25px;
+}
+
+.signin-error-container > .error-text {
+  padding: 10px;
+  background-color: $error_text_color;
+  color: $white_text_color;
+  margin: 10px 0;
+}
+
+.signin-error-container .close-error-btn {
+  cursor: pointer;
+  margin: 0 8px;
+  float: right;
+}
+
+/*styles for strength*/
+#strength {
+  display: inline-block;
+}
+
+.label-low {
+  background-color: $error_text_color;
+}
+
+.label-good {
+  background-color: $warning_text_color;
+}
+
+.label-strong {
+  background-color: $success_text_color;
+}
+
+#strength .label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 70%;
+  font-weight: 700;
+  line-height: 1;
+  color: $white_text_color;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}

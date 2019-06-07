@@ -35,6 +35,10 @@
                 {
                   "replace": "apps/rank-active/src/environments/environment.ts",
                   "with": "apps/rank-active/src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "libs/auth/shared/assets/styles.scss",
+                  "with": "apps/rank-active/src/assets/libs-assets/styles.scss"
                 }
               ],
               "optimization": true,
@@ -53,13 +57,21 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "dev": {
+              "fileReplacements": [
+                {
+                  "replace": "libs/auth/shared/assets/styles.scss",
+                  "with": "apps/rank-active/src/assets/libs-assets/auth/styles.scss"
+                }
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "rank-active:build"
+            "browserTarget": "rank-active:build:dev"
           },
           "configurations": {
             "production": {
