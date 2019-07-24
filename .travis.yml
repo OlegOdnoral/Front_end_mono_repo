@@ -1,0 +1,10 @@
+
+dist: trusty
+sudo: required
+
+addons:
+  sonarcloud:
+    organization: "tempeny-github" # the key of the org you chose at step #3
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
