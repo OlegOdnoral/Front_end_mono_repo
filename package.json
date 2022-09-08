@@ -78,7 +78,7 @@
     "codelyzer": "^5.0.1",
     "csso": "^3.5.1",
     "dotenv": "6.2.0",
-    "excel4node": "^1.7.2",
+    "excel4node": "^1.8.0",
     "glob": "^7.1.4",
     "imagemin": "^6.1.0",
     "imagemin-jpegoptim": "^6.0.0",
